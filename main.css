@@ -601,7 +601,7 @@ body{
         top: 29px;
         right: 20px;
         width: 20px;
-        height: 1px;
+        height: 2px;
         background-color: #000;
     }
 
@@ -644,7 +644,7 @@ body{
     }
 
     .header-inner.opened {
-        height: 255px;
+        height: 260px;
     }
 
     .header-inner.opened .nav {
