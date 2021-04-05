@@ -830,6 +830,11 @@ body{
         width: 200px;
     }
 
+    .modal-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
     /* intro */
     .intro-text {
         font-size: 24px;
