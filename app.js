@@ -31,19 +31,26 @@ function createModal() {
     const modalBtn = document.querySelector('.modal-btn')
 
     modalBtn.addEventListener('click', () => {
-        modal.style.display = 'none'
+        modalContent.classList.add('close')
+        setTimeout(() => {
+            modal.style.display = 'none'
+            modalContent.classList.remove('close')
+        },300)
     })
 
     dataLink.forEach(link => {
         link.addEventListener('click', () => {
-            // modalContent.classList.toggle('open')
             modal.style.display = 'block'
         })
     })
 
     modal.addEventListener('click', event => {
         if (event.target.dataset.general) {
-            modal.style.display = 'none'
+            modalContent.classList.add('close')
+            setTimeout(() => {
+                modal.style.display = 'none'
+                modalContent.classList.remove('close')
+            },300)
         }
     })
 }

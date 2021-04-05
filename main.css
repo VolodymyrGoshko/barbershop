@@ -110,7 +110,23 @@ body{
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 20px;
+    transform: translateY(0);
     box-shadow: 2px 2px 2px rgba(0,0,0, .5);
+    animation: open .3s linear;
+}
+
+@keyframes open {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal-content.close {
+    transform: translateY(-500px);
+    transition: transform .3s linear;
 }
 
 .modal-title {
