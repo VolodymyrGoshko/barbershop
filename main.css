@@ -91,6 +91,74 @@ body{
 }
 
 
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255,255,255, .4);
+}
+
+.modal-content {
+    width: 600px;
+    background-color: #fff;
+    height: 400px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0, .5);
+}
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.form input, textarea {
+    width: 400px;
+    display: block;
+    height: 35px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.date{
+    height: 30px!important;
+    width: 150px!important;
+}
+
+.message{
+    height: 80px!important;
+}
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    background: #ccc;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
 
 /* Intro */
 .intro{
@@ -580,6 +648,17 @@ body{
 }
 
 @media (max-width: 770px){
+
+    /* modal */
+
+    .modal-content{
+        width: 400px;
+    }
+
+    .form input, textarea {
+        width: 300px;
+    }
+
     /* intro */
     .intro-text {
         font-size: 35px;
@@ -732,6 +811,17 @@ body{
 }
 
 @media (max-width: 575px){
+
+    /* Modal */
+
+    .modal-content {
+        width: 300px;
+    }
+
+    .form input, textarea {
+        width: 200px;
+    }
+
     /* intro */
     .intro-text {
         font-size: 24px;
