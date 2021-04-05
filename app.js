@@ -41,11 +41,15 @@ function createModal() {
     dataLink.forEach(link => {
         link.addEventListener('click', () => {
             modal.style.display = 'block'
+            setTimeout(() => {
+                modalContent.classList.add('openm')
+            },100)
         })
     })
 
     modal.addEventListener('click', event => {
         if (event.target.dataset.general) {
+            modalContent.classList.remove('openm')
             modalContent.classList.add('close')
             setTimeout(() => {
                 modal.style.display = 'none'
@@ -54,4 +58,5 @@ function createModal() {
         }
     })
 }
+
 createModal()
