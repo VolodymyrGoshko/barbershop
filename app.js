@@ -31,6 +31,7 @@ function createModal() {
     const modalBtn = document.querySelector('.modal-btn')
 
     modalBtn.addEventListener('click', () => {
+        modalContent.classList.remove('openm')
         modalContent.classList.add('close')
         setTimeout(() => {
             modal.style.display = 'none'
