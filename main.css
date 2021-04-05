@@ -601,8 +601,9 @@ body{
         top: 29px;
         right: 20px;
         width: 20px;
-        height: 2px;
+        height: 1px;
         background-color: #000;
+        transition: all .3s linear;
     }
 
     .nav-line:before {
@@ -664,6 +665,25 @@ body{
 
     .header-inner.opened .nav-link:after {
         margin: 2px 0;
+    }
+
+    .header-inner.opened .nav-line:before {
+        transform: rotate(45deg);
+        transition: transform .3s linear;
+        top: 0;
+        right: 1px;
+    }
+
+    .header-inner.opened .nav-line:after {
+        transform: rotate(-45deg);
+        transition: transform .3s linear;
+        right: 2px;
+        top: 0;
+    }
+
+    .header-inner.opened .nav-line {
+        width: 0;
+        transition: width .1s linear;
     }
 
     .header-inner.opened .img_logo {
