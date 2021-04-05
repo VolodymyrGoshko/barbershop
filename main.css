@@ -653,6 +653,7 @@ body{
 
     .modal-content{
         width: 400px;
+        margin: 70px auto 0;
     }
 
     .form input, textarea {
