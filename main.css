@@ -269,12 +269,17 @@ body{
     margin: 20px auto 0;
 }
 
-.about-intro img{
+.about-intro {
     width: 700px;
     display: block;
     margin: 40px auto 0;
-    border-radius: 20px;
     transition: .3s linear;
+}
+
+.about-intro video {
+    width: 700px;
+    height: 600px;
+    outline: none;
 }
 
 .about-text{
@@ -592,9 +597,14 @@ body{
 
 
     /* about */
-    .about-intro img {
+    .about-intro{
         transition: .3s linear;
         width: 500px;
+    }
+
+    .about-intro video {
+        width: 500px;
+        height: 300px;
     }
 
     .about-text {
@@ -682,6 +692,8 @@ body{
         font-size: 35px;
         width: 500px;
     }
+
+    /* Nav */
 
     .nav {
         display: none;
@@ -885,8 +897,13 @@ body{
         padding-bottom: 70px;
     }
 
-    .about-intro img{
+    .about-intro{
         width: 300px;
+    }
+
+    .about-intro video {
+        width: 300px;
+        height: 200px;
     }
 
     .rectangle{
